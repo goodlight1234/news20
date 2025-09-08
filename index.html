@@ -126,7 +126,57 @@
             margin-left: auto;
             margin-right: auto;
         }
-    </style>
+     /* Post Navigation Styles */
+        .post-navigation {
+            display: flex;
+            flex-direction: column; /* 세로 정렬 */
+            gap: 10px; /* 링크 사이 간격 */
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+
+        .post-link {
+            display: flex;
+            align-items: center;
+            padding: 10px 15px;
+            background-color: #f0f0f0;
+            border-radius: 6px;
+            text-decoration: none;
+            color: #333;
+            font-size: 0.95em;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .post-link:hover {
+            background-color: #e0e0e0;
+            color: #007bff;
+        }
+
+        .post-link .arrow {
+            font-size: 1.2em;
+            color: #007bff;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        .post-link.prev {
+            justify-content: flex-start;
+        }
+
+        .post-link.next {
+            justify-content: flex-end;
+        }
+
+        .post-link.prev .arrow {
+            transform: none; /* ▲ 기본 방향 */
+            margin-left: -5px; /* 화살표가 더 붙도록 조정 */
+        }
+
+        .post-link.next .arrow {
+            transform: none; /* ▼ 기본 방향 */
+            margin-right: -5px; /* 화살표가 더 붙도록 조정 */
+        }</style>
 </head>
 <body>
 
@@ -159,7 +209,10 @@
         
         <p>시노펙스는 롯데케미칼의 수처리 사업 부문 인수로 확보한 침지식 MBR 멤브레인과 기존에 보유한 가압식 PVDF 멤브레인, MF(정밀여과), UF(한외여과), NF(나노여과) 기술과 연계한 국내 최고 수준의 멤브레인 기술 포트폴리오를 바탕으로 ESG 수처리 산업의 리딩 기업으로 성장해 나갈 계획입니다.</p>
     </div>
-</div>
+ <div class="post-navigation">
+        <a href="https://goodlight1234.github.io/news19/" class="post-link prev"><span class="arrow">▲</span> 시노펙스, 산불피해지 돕는 '착한 여행' 캠페인 추진!</a>
+        <a href="https://goodlight1234.github.io/news21/" class="post-link next">시노펙스, 혈액여과기 유럽 CE MDR 인증 위한 환자임상 성공!<span class="arrow">▼</span></a>
+    </div></div>
 
 </body>
 </html>
